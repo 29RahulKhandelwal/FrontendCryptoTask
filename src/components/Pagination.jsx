@@ -6,6 +6,9 @@ const Pagination = ({cryptoDataPerPage,paginate,currentPage}) => {
     for(let i=1;i<=Math.ceil(100/cryptoDataPerPage);i++){
         pageNumbers.push(i);
     }
+    const length=pageNumbers.length;
+    const startPageNumber=pageNumbers.splice(0,2)
+    const endPageNumber=pageNumbers.splice(length-4,2)
     return (
         <nav aria-label="Page navigation example" className='pagination'>
             <ul class="pagination">
@@ -14,18 +17,30 @@ const Pagination = ({cryptoDataPerPage,paginate,currentPage}) => {
                         <span aria-hidden="true">&laquo;</span>
                     </a>
                 </li>}
-                {pageNumbers.map(number=>{
+                {startPageNumber.map(number=>{
                     return <li key={{number}} className="page-item">
                         <a onClick={()=>paginate(number)} href="!#" className='page-link'>
                             {number}
                         </a>
                     </li>
                 })}
-                {currentPage<pageNumbers.length && <li class="page-item">
+                <li key="0" className="page-item">
+                        <a href="!#" className='page-link disabled'>
+                            ...
+                        </a>
+                </li>
+                {endPageNumber.map(number=>{
+                    return <li key={{number}} className="page-item">
+                        <a onClick={()=>paginate(number)} href="!#" className='page-link'>
+                            {number}
+                        </a>
+                    </li>
+                })}
+                <li class={`page-item ${currentPage===length && 'disabled'}`}>
                     <a class="page-link" href="#" aria-label="Next" onClick={()=>paginate(currentPage+1)}>
                         <span aria-hidden="true">&raquo;</span>
                     </a>
-                </li>}
+                </li>
             </ul>
         </nav>
     )

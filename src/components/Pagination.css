@@ -2,6 +2,9 @@
     float: right;
     margin-top: 10px;
 }
+.disabled{
+    pointer-events: none;
+}
 @media only screen and (max-width: 1140px) {
     .pagination{
         float: none;
