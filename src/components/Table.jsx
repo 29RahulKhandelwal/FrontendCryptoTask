@@ -25,7 +25,7 @@ const Table = (props) => {
                     <thead>
                         <tr>
                             <th className='textInitial' scope="col"></th>
-                            <th className='textInitial' scope="col">#</th>
+                            <th className='textInitial hide' scope="col">#</th>
                             <th className='textInitial' scope="col">Name</th>
                             <th scope="col">Price</th>
                             <th scope="col">24 <i class="fa-solid fa-arrow-down downArrow"></i></th>
@@ -47,7 +47,7 @@ const Table = (props) => {
                             return (
                                 <tr key={data.market_cap_rank} onClick={e=>handleClick(data.market_cap_rank)} className="CrytoDataCursor">
                                     <td className='textInitial'><i class="fa-regular fa-star starIcon"></i></td>
-                                    <td className='textInitial'>{data.market_cap_rank}</td>
+                                    <td className='textInitial hide'>{data.market_cap_rank}</td>
                                     <td className='textInitial'>
                                         <img className='cryptoImg' src={data.image} alt={data.name} />
                                         {data.name}
