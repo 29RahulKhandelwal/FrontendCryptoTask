@@ -1,0 +1,17 @@
+.nav{
+    border-bottom: 1px solid #e5e5e5
+}
+.navStyle{
+    width: 90%;
+}
+.brandSymbol{
+    position: relative;
+    top: -2px;
+}
+.brandName{
+    color: black;
+    font-weight: 600;
+}
+.icons{
+    margin: 0 10px;
+}

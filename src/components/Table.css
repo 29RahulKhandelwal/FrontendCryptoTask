@@ -1,0 +1,71 @@
+.showData{
+    width: 100%;
+}
+.starIcon{
+    color: #ABB4C2;
+}
+tr{
+    text-align: end;
+    line-height: 45px;
+}
+.CrytoDataCursor{
+    cursor: pointer;
+}
+.textInitial{
+    text-align: initial;
+}
+.redFont{
+    color: #EA3943;
+}
+.greenFont, .downArrow{
+    color: #16C784;
+}
+.fa-sort-down{
+    vertical-align: text-top;
+}
+.fa-sort-up{
+    vertical-align: sub;
+}
+.grayFont{
+    color: #808A9D;
+}
+.cryptoImg{
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+}
+.progress{
+    background: #EFF2F5;
+    border-radius: 4px;
+    height: 6px;
+    width: 160px;
+    position: relative;
+    left: 97px;
+}
+.progress-bar{
+    background-color: #CFD6E4;
+}
+.displayBlock{
+    display: block;
+    line-height: initial;
+}
+@media only screen and (max-width: 1400px) {
+    .progress{
+        left: 52px;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    .progress{
+        left: 70px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .progress{
+        left: 36px;
+    }
+}
+@media only screen and (max-width: 1140px) {
+    .hide{
+        display: none;
+    }
+}

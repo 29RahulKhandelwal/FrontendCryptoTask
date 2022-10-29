@@ -1,0 +1,106 @@
+.mainCarousel{
+  background: #F8FAFC;
+}
+.carousel{
+    width: 95%;
+    margin: auto;
+}
+.carouselDiv{
+    width: 100%;
+    display: inline-flex;
+    margin: 10px;
+}
+.carousel-inner{
+    margin: 0 10px;
+}
+.carousel3{
+    width: 32%;
+    height: 120px;
+    display: inline-flex;
+    background: white;
+    margin: 5px;
+    box-shadow: 0px 1.47737px 17.7284px 4.43211px rgb(208 214 227 / 30%);
+    border-radius: 12px;
+}
+.carouselInner{
+    display: inline-flex;
+}
+.carouselImg{
+    border-radius: 12px;
+    height: 75px;
+    margin: auto;
+    margin-left: 10px;
+}
+.carouselBtn{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: lightgray;
+}
+.prev{
+    margin-top: 50px;
+}
+.next{
+    margin-top: 55px;
+    position: relative;
+    right: 15px;
+}
+.carouselHeadline{
+    margin: 15px;
+}
+.para{
+    margin-bottom: 0;
+}
+.carousel-indicators{
+    display: none;
+    top: 150px;
+}
+.iconFire{
+    color: red;
+    background-color: yellow;
+    border-radius: 50%;
+}
+.carousel-indicators [data-bs-target]{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #0052FE !important;
+}
+.carousel-dark .carousel-indicators [data-bs-target]{
+    background-color: none;
+}
+@media only screen and (max-width: 1040px) {
+    .carousel3{
+        width: 48%;
+    }
+    .c3{
+        display: none;
+    }
+    .next{
+        right: 4px;
+    }
+}
+@media only screen and (max-width: 792px) {
+    .carousel{
+        width: 92%;
+    }
+    .carousel3{
+        width: 97%;
+    }
+    .c3, .c2{
+        display: none;
+    }
+    .next{
+        right: 4px;
+    }
+    .carousel-indicators{
+        display: flex;
+    }
+    .carousel-inner{
+        margin: 0;
+    }
+    .carouselBtn{
+        display: none;
+    }
+}
