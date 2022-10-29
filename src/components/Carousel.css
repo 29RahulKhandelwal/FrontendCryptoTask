@@ -83,7 +83,10 @@
 }
 @media only screen and (max-width: 792px) {
     .carousel{
-        width: 89%;
+        width: 87%;
+    }
+    .carouselDiv{
+        margin: 10px 0;
     }
     .carousel3{
         width: 97%;
