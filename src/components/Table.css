@@ -69,3 +69,8 @@ tr{
         display: none;
     }
 }
+@media only screen and (max-width: 792px) {
+    .showData{
+        font-size: 10px;
+    }
+}
